@@ -1,0 +1,23 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "3b1fe526-0864-4e18-b84e-4446b411351b",
+  "sendCrashReports": "true",
+  "terraformProviders": ["aws@~> 5.0"],
+  "terraformModules": [
+    {
+      "name": "s3-bucket",
+      "source": "terraform-aws-modules/s3-bucket/aws",
+      "version": "4.1.0"
+    }
+  ],
+  "context": {
+    "dev": {
+      "databaseName": "hoge",
+      "clusterIdentifier": "huga",
+      "sampleAccountId": "123456789012",
+      "anotherAccountId": "987654321098",
+      "managedS3KmsKeyArn": "managed-s3-kms-key-arn"
+    }
+  }
+}

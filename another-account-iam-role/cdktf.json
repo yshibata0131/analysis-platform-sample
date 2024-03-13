@@ -1,0 +1,15 @@
+{
+  "language": "typescript",
+  "app": "npx ts-node main.ts",
+  "projectId": "633f6221-96c7-493a-a1c0-b2c810d7c9b5",
+  "sendCrashReports": "true",
+  "terraformProviders": ["aws@~> 5.0"],
+  "terraformModules": [],
+  "context": {
+    "dev": {
+      "clusterIdentifier": "huga",
+      "sampleAccountId": "123456789012",
+      "anotherAccountId": "987654321098"
+    }
+  }
+}
